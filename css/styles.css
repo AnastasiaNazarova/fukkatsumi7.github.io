@@ -1,0 +1,229 @@
+@font-face {
+	font-family:'Wither';
+	font-style:lighter;
+	src:url(../fonts/Chronicles_font.otf) format('otf');
+}
+
+
+h1{
+	font-size: 26px;
+	color:#f7e8dc;
+}
+
+h2{	
+	font-size: 22px;
+	color: #f08a17;
+}
+
+h4{
+	font-size: 20px;
+	color: #f7e8dc;
+}
+p {	
+	font-size: 16px;
+	margin: 0px;	
+	text-align:justify; 
+}
+
+
+body {
+	font: 12px Tahoma, sans-serif;
+}
+
+header { 
+	padding: 20px 0; 
+	background-image: url(../images/wood_header.jpg);
+	background-size: 500px;
+	background-repeat: repeat;
+	display: flex; 
+	justify-content: space-between; 
+	align-items: center; 
+	
+} 
+
+.logo{ 
+	margin-left: 20px;
+	align-items: center; 
+}
+.logo img{
+	width:650px;
+}
+
+.login-pass { 
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between; 
+
+  width: 15%;
+  min-width: 145px;
+  margin-right: 25px;  
+}
+
+.login-pass input {	
+	background-color: #feffff;
+	border: 1px solid #e7e7e7;
+	height: 34px;
+	color: #b2b2b2;
+  vertical-align: top;
+  
+  margin-bottom: 5px; 
+  width: 100%;
+}
+
+button {
+	color: #fff;
+	background-color: rgb(17, 17, 51);
+	border: none;
+	height: 38px;
+	font-family: 'Oswald', sans-serif;
+}
+
+.registration { 
+  margin-right: 3%;	
+}
+
+input {
+	
+	background-color: #feffff;
+	border: 1px solid #e7e7e7;
+	height: 34px;
+	color: #b2b2b2;
+	vertical-align: top;
+}
+
+
+.wrapper {
+  max-width: 1366px;
+  margin: auto;
+}
+
+nav{
+	display: flex;
+	justify-content: space-between;
+	background: #FFFFCC;
+}
+nav ul {
+	margin: 0;
+	padding: 0;
+	margin-left:23%;
+	text-align: center;
+	
+}
+nav li {	
+	list-style-position: inside;
+	display: inline-block;
+	padding: 10px 30px;
+	margin: 0;
+}
+
+nav li a {	
+	text-decoration: none;	
+	font-family: 'Wither';
+	font-size: 16px;
+	color: rgb(59, 31, 10);
+	
+}
+nav li a:hover {  
+	color: rgb(255, 207, 102);  
+  }  
+  nav li a:focus {  
+	outline: thin dotted;  
+  }  
+ .navigation_active a{
+	color: rgba(145, 121, 71, 0.692); 
+ }
+ 
+
+
+main{
+  display: flex;
+  justify-content: space-between;
+}
+
+section {
+	width: auto;
+	font-size: 16px;
+	padding: 10px;
+	
+	background-image: url(../images/wood_background.jpg);
+	background-size: auto 500px;
+	background-repeat: repeat;	
+}
+
+section p{
+	color: #f7e8dc;
+}
+
+
+aside img
+{
+	 width:250px;
+	
+}
+aside 
+{	
+	background-image: url(../images/background_section.jpg);
+	background-size: contain;
+}
+
+footer
+{
+	margin-top:0;
+	background: #161411;
+	height: 80px;
+	
+}
+footer p{
+	padding: 30px;
+	margin-top:0;
+	margin-bottom: 0;
+	color: #fff;
+	font-size: 18px;
+	text-align: center;
+	}
+	 
+footer img{
+	margin-top:0;	
+	width:150px;
+	height:30px;
+}
+
+
+.article{
+	border: #4a6911;	
+	padding: 10px;
+	border-style: solid;
+	margin-bottom: 20px;
+	background-image: url(../images/ancient-parchment-1175853.png);	
+	background-size: cover;
+}
+.article p{
+	color: #f7e8dc;
+	line-height:1.5;
+}
+.article a{
+	color: rgb(247, 243, 208);
+	font-weight: bold;
+}
+
+
+
+
+
+table{
+	border-collapse: collapse;
+	border: 1px solid grey;
+   background-color: #FFFFCC;
+}
+
+table th{
+	padding: 10px;
+	color:#201a14;
+	border: 1px solid grey;
+}
+table td{
+	padding: 10px;
+	color:#201a14;
+	border: 1px solid grey;
+}
+tr:nth-child(2n) {background: rgb(215, 243, 149);}
