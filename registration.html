@@ -5,27 +5,24 @@
 
 	<title>Таверна "Белый волк"</title>
 	<link rel="stylesheet" href="css/styles.css" type="text/css">
+	<script src="scripts/script.js" type="text/javascript"></script>
+
+	<form class="login-pass">
+
+			<input type="text" name="login" placeholder="Логин">
+			<input type="password" name="pass" placeholder="Пароль">
+			<button type="button" class="registration" onclick="location.href='registration.html'">Регистрация</button>
+			<button type="submit">Войти</button> 
+	</form>
 
 </head>
 
 <body class="wrapper">
-
-
 	<header>
 
 		<div class="logo">
 			<a href="index.html"><img src="images/logo.png" alt="логотип"></a>
 		</div>
-
-		<form class="login-pass">
-
-				<input type="text" name="login" placeholder="Логин">
-				<input type="password" name="pass" placeholder="Пароль">
-				<button type="button" class="registration" onclick="location.href='registration.html'">Регистрация</button>
-				<button type="submit">Войти</button> 
-		</form>
-	
-
 	</header>
 	<nav>
 		<ul>
@@ -40,8 +37,6 @@
 			<input type="text" name="q" placeholder="Search"><button type="submit">Найти</button>
 		</form>
 	</nav>
-
-
 	<main>
 		<aside>
 			<img src="images/elf-ranger.png" alt="эльфийка лучница">
@@ -49,50 +44,50 @@
 		</aside>
 
 		<div>
-			<h1>Регистрация</h1> 
-			<form class="registration-form">
-		<label class="col-one-half">
-			<span class="label-text">First Name</span>
-			<input type="text" name="firstName">
-		</label>
-		<label class="col-one-half">
-			<span class="label-text">Last Name</span>
-			<input type="text" name="lastName">
-		</label>
-		<label>
-			<span class="label-text">Email</span>
-			<input type="text" name="email">
-		</label>
-		<label class="password">
-			<span class="label-text">Password</span>
-			<button class="toggle-visibility" title="toggle password visibility" tabindex="-1">
-				<span class="glyphicon glyphicon-eye-close"></span>
-			</button>
-			<input type="password" name="password">
-		</label>
-		<label class="checkbox">
-			<input type="checkbox" name="newsletter">
-			<span>Sign me up for the weekly newsletter.</span>
-		</label>
-		<div class="text-center">
-			<button class="submit" name="register">Sign Me Up</button>
-		</div>
-	</form>
+			<h1>Регистрация</h1>
+
+			<form action="/feedback/" method="post" onsubmit="return (ValidMail())" class="registration_form">
+			</form>
+			<section style="background-color:blanchedalmond">
+				<p style="color: black" id="message_login"></p>
+				Логин: <input type="text" id ="login_reg" name="login_reg" placeholder="Введите ваш логин"><br><br>
+				
+				<p style="color: black" id="message_password"></p>
+				Пароль: <input id ="password" type="password" name="password" placeholder="Введите ваш пароль"><br><br>
+				
+				<p style="color: black" id="message_password2"></p>
+				Повторите пароль:<input id = "password2" type="password" name="password2" placeholder="Повторите пароль"><br><br>
+				
+				<p style="color: black" id="message"></p>
+				Почта:<input id="email" type="text" name="email" placeholder="Введите почту"><br><br>
+
+				<input name="button" type="submit" value="Проверить" onClick="ValidMail();ValidLogin();ValidPassword();" />
+
+			</section>
+
+
+
+
+
 
 		</div>
 
 		<aside>
 			<img src="images/warrior.png" alt="воин">
 			<img src="images/cleric.png" alt="жрец">
-		<aside>
+
+			<aside>
 
 
 	</main>
 
+
+
+
 	<footer align="center">
 		<p>Таверна "Белый Волк", 2018</p>
 	</footer>
-
 </body>
+
 
 </html>

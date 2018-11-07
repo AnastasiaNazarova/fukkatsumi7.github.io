@@ -44,6 +44,7 @@ header {
 .logo{ 
 	margin-left: 20px;
 	align-items: center; 
+	background: transparent;
 }
 .logo img{
 	width:650px;
@@ -140,8 +141,8 @@ main{
   justify-content: space-between;
 }
 
-section {
-	width: auto;
+div {
+	width:62%;
 	font-size: 16px;
 	padding: 10px;
 	
@@ -150,20 +151,21 @@ section {
 	background-repeat: repeat;	
 }
 
-section p{
+div p{
 	color: #f7e8dc;
 }
 
 
 aside img
 {
-	 width:250px;
+	 width:100%;
 	
 }
 aside 
 {	
 	background-image: url(../images/background_section.jpg);
 	background-size: contain;
+	width:250px;
 }
 
 footer
@@ -189,7 +191,7 @@ footer img{
 }
 
 
-.article{
+section{
 	border: #4a6911;	
 	padding: 10px;
 	border-style: solid;
@@ -197,11 +199,11 @@ footer img{
 	background-image: url(../images/ancient-parchment-1175853.png);	
 	background-size: cover;
 }
-.article p{
+section p{
 	color: #f7e8dc;
 	line-height:1.5;
 }
-.article a{
+section a{
 	color: rgb(247, 243, 208);
 	font-weight: bold;
 }
@@ -227,3 +229,13 @@ table td{
 	border: 1px solid grey;
 }
 tr:nth-child(2n) {background: rgb(215, 243, 149);}
+
+
+.registration_form{
+	background-color: palegoldenrod;
+	border: #4a6911;	
+	padding: 10px;
+	border-style: solid;
+	margin-bottom: 20px;
+	
+}
