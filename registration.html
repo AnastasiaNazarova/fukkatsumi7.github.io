@@ -46,8 +46,8 @@
 		<div>
 			<h1>Регистрация</h1>
 
-			<form action="/feedback/" method="post" onsubmit="return (ValidMail())" class="registration_form">
-			</form>
+			<!--<form action="/feedback/" method="post" onsubmit="return (ValidMail())" class="registration_form">
+			</form>-->
 			<section style="background-color:blanchedalmond">
 				<p style="color: black" id="message_login"></p>
 				Логин: <input type="text" id ="login_reg" name="login_reg" placeholder="Введите ваш логин"><br><br>
@@ -61,7 +61,10 @@
 				<p style="color: black" id="message"></p>
 				Почта:<input id="email" type="text" name="email" placeholder="Введите почту"><br><br>
 
-				<input name="button" type="submit" value="Проверить" onClick="ValidMail();ValidLogin();ValidPassword();" />
+				<p style="color: black" id="message_phone"></p>
+				Телефон:<input id="phone" type="text" name="phone" placeholder="Введите телефон"><br><br>
+
+				<input name="button" type="submit" value="Проверить" onClick="ValidMail();ValidLogin();ValidPassword();ValidPhone();" />
 
 			</section>
 

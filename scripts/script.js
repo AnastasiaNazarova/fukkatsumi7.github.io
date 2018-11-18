@@ -10,13 +10,13 @@ function ValidMail() {
 }
 function ValidLogin() {
 
-    var re = /^[alpha]{1}[\w]{6,20}$/i;
+    var re = /^[a-z0-9_-]{4,20}$/i;
     var login = document.getElementById('login_reg').value;
     var valid = re.test(login);
     if (login == "") output = 'Введите логин';
     else {
-        if (valid) output = '';
-        else output = 'Логин введен неправильно!';
+        if (!valid) output = 'Логин введен неправильно!';
+        else output = '';
     }
     document.getElementById('message_login').innerHTML = output;
     return valid;
@@ -43,3 +43,12 @@ function ValidPassword() {
     document.getElementById('message_password2').innerHTML = output2;
     return valid;
 }
+function ValidPhone() {
+    var re = /^\d[\d\(\)\ -]{4,14}\d$/;
+    var myPhone = document.getElementById('phone').value;
+    var valid = re.test(myPhone);
+    if (valid) output = '';
+    else output = 'Номер телефона введен неправильно!';
+    document.getElementById('message').innerHTML = document.getElementById('message_phone').innerHTML+'<br />'+output;
+    return valid;
+}  
