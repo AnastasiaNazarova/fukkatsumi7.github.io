@@ -48,23 +48,17 @@
 
 			<!--<form action="/feedback/" method="post" onsubmit="return (ValidMail())" class="registration_form">
 			</form>-->
-			<section style="background-color:blanchedalmond">
-				<p style="color: black" id="message_login"></p>
-				Логин: <input type="text" id ="login_reg" name="login_reg" placeholder="Введите ваш логин"><br><br>
-				
-				<p style="color: black" id="message_password"></p>
-				Пароль: <input id ="password" type="password" name="password" placeholder="Введите ваш пароль"><br><br>
-				
-				<p style="color: black" id="message_password2"></p>
-				Повторите пароль:<input id = "password2" type="password" name="password2" placeholder="Повторите пароль"><br><br>
-				
-				<p style="color: black" id="message"></p>
-				Почта:<input id="email" type="text" name="email" placeholder="Введите почту"><br><br>
+			<section >
 
-				<p style="color: black" id="message_phone"></p>
-				Телефон:<input id="phone" type="text" name="phone" placeholder="Введите телефон"><br><br>
+                <form oninput="result.value=(cm.value/2.54).toFixed(2)">
+                   
+                    
+                    <p id = "random_result">Длина в дюймах: </p>
+                  </form>
 
-				<input name="button" type="submit" value="Проверить" onClick="ValidMail();ValidLogin();ValidPassword();ValidPhone();" />
+               
+
+				<input name="button" type="submit" value="4" onClick="getRandomInRange(1, 4)" />
 
 			</section>
 
