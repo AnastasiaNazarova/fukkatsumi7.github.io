@@ -52,3 +52,27 @@ function ValidPhone() {
     document.getElementById('message').innerHTML = document.getElementById('message_phone').innerHTML+'<br />'+output;
     return valid;
 }  
+
+function getRandomInRange(min, max) {
+    var c = Math.floor(Math.random() * (max - min + 1)) + min;
+    document.getElementById('random_result').innerHTML = 'Результат вашего броска: '+ c.toString();
+    
+  }
+
+  window.onscroll = function() {
+    var scrollElem = document.getElementById("scrollToTop");
+    if (document.body.scrollTop > document.documentElement.clientHeight) {
+       scrollElem.style.opacity = "1";
+    } else {
+        scrollElem.style.opacity = "0";
+    }
+ }
+ var timeOut;
+function goUp() {
+   var top = Math.max(document.body.scrollTop,document.documentElement.scrollTop);
+   if(top > 0) {
+      window.scrollBy(0,-100);
+      timeOut = setTimeout('goUp()',20);
+   } else clearTimeout(timeOut);
+}
+

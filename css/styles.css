@@ -15,15 +15,15 @@ h2{
 	color: #f08a17;
 }
 
-h4{
+h3{
 	font-size: 20px;
-	color: #f7e8dc;
+	color: #579b2f;
 }
-p {	
+/*p {	
 	font-size: 16px;
 	margin: 0px;	
 	text-align:justify; 
-}
+}*/
 
 
 body {
@@ -97,6 +97,7 @@ input {
   max-width: 1366px;
   margin: auto;
 }
+
 
 nav{
 	display: flex;
@@ -210,8 +211,6 @@ section a{
 
 
 
-
-
 table{
 	border-collapse: collapse;
 	border: 1px solid grey;
@@ -237,4 +236,37 @@ tr:nth-child(2n) {background: rgb(215, 243, 149);}
 	padding: 10px;
 	border-style: solid;
 	margin-bottom: 20px;	
+}
+
+
+.dice_btn{
+	display: flex;
+	flex-direction: row;
+	
+	-webkit-box-pack: start;
+	align-items: flex-start;
+	
+	background: transparent;
+	/*justify-content: space-between;*/
+}
+.dice_btn button{
+	
+	height:100px; 
+	background: transparent;
+	margin: 15px;
+	margin-left: 5px;
+}
+
+#scrollToTop {
+
+	position: fixed;
+	bottom: 20px;
+	right: 20px;	
+	cursor: pointer;
+	opacity: 0;
+	transition: all 0.5s ease-in;
+	width: 50px;	
+   color: rgba(37, 10, 10, 0.966);
+   font-weight: bold;
+   background: transparent;
 }

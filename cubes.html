@@ -7,13 +7,7 @@
 	<link rel="stylesheet" href="css/styles.css" type="text/css">
 	<script src="scripts/script.js" type="text/javascript"></script>
 
-	<form class="login-pass">
 
-			<input type="text" name="login" placeholder="Логин">
-			<input type="password" name="pass" placeholder="Пароль">
-			<button type="button" class="registration" onclick="location.href='registration.html'">Регистрация</button>
-			<button type="submit">Войти</button> 
-	</form>
 
 </head>
 
@@ -23,15 +17,25 @@
 		<div class="logo">
 			<a href="index.html"><img src="images/logo.png" alt="логотип"></a>
 		</div>
+
+		<form class="login-pass">
+
+			<input type="text" name="login" placeholder="Логин">
+			<input type="password" name="pass" placeholder="Пароль">
+			<button type="button" class="registration" onclick="location.href='registration.html'">Регистрация</button>
+			<button type="submit">Войти</button>
+		</form>
+
+
 	</header>
 	<nav>
 		<ul>
 			<li><a href="klass.html">Классы</a></li>
-			<li><a href="races.html">Рассы</a></li>
+			<li><a href="races.html">Расы</a></li>
 			<li><a href="creator.html">Боги</a></li>
 			<li><a href="adventures.html">Приключения</a></li>
 			<li><a href="maps.html">Карты</a></li>
-			<li><a href="cubes.html">Кубики</a></li>
+			<li><a href="cubes.html">Дайсы</a></li>
 		</ul>
 		<form name="search" action="#" method="get" style="margin-right:20px;">
 			<input type="text" name="q" placeholder="Search"><button type="submit">Найти</button>
@@ -44,22 +48,38 @@
 		</aside>
 
 		<div>
-			<h1>Регистрация</h1>
+			<h1>Дайсы</h1>
+			<section>
+				
+				<div class="dice_btn">
+					<button onClick="getRandomInRange(1, 4)">
+						<img src="images/d4.png">
+					</button>
 
-			<!--<form action="/feedback/" method="post" onsubmit="return (ValidMail())" class="registration_form">
-			</form>-->
-			<section >
+					<button onClick="getRandomInRange(1, 6)">
+						<img src="images/d6.png">
+					</button>
 
-                <form oninput="result.value=(cm.value/2.54).toFixed(2)">
-                   
-                    
-                    <p id = "random_result">Длина в дюймах: </p>
-                  </form>
+					<button onClick="getRandomInRange(1, 8)">
+						<img src="images/d8.png">
+					</button>
 
-               
+					<button onClick="getRandomInRange(1, 10)">
+						<img src="images/d10.png">
+					</button>
+					<button onClick="getRandomInRange(1, 12)">
+						<img src="images/d12.png">
+					</button>
+					<button onClick="getRandomInRange(1, 20)">
+						<img src="images/d20.png">
+					</button>
+					<button onClick="getRandomInRange(1, 100)">
+						<img src="images/d100.png">
+					</button>
+				
+				</div>
 
-				<input name="button" type="submit" value="4" onClick="getRandomInRange(1, 4)" />
-
+				<p id="random_result"> </p>
 			</section>
 
 		</div>
