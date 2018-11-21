@@ -142,7 +142,7 @@ main{
   justify-content: space-between;
 }
 
-div {
+div{
 	width:62%;
 	font-size: 16px;
 	padding: 10px;
@@ -241,13 +241,10 @@ tr:nth-child(2n) {background: rgb(215, 243, 149);}
 
 .dice_btn{
 	display: flex;
-	flex-direction: row;
-	
+	flex-direction: row;	
 	-webkit-box-pack: start;
-	align-items: flex-start;
-	
+	align-items: flex-start;	
 	background: transparent;
-	/*justify-content: space-between;*/
 }
 .dice_btn button{
 	
@@ -269,4 +266,33 @@ tr:nth-child(2n) {background: rgb(215, 243, 149);}
    color: rgba(37, 10, 10, 0.966);
    font-weight: bold;
    background: transparent;
+}
+ 
+
+.hovergallery{
+	background: transparent;
+}
+
+.hovergallery tr{
+	background: transparent;
+}
+.hovergallery img{
+	height: 100%;
+	width: 100%;	
+}
+
+.div_gallery{
+	
+	font-size: 16px;
+	padding: 10px;	
+	background:transparent ;	
+}
+.div_gallery image{
+	height: 100%;
+	width: 100%;
+	margin: 0px;
+	
+}
+.div_gallery p{
+	color: #f7e8dc;	
 }
