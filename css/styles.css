@@ -239,6 +239,17 @@ tr:nth-child(2n) {background: rgb(215, 243, 149);}
 }
 
 
+.table_registration{
+	background-color: palegoldenrod;
+	width:100%;
+}
+.table_registration p{
+	font-size: 14px;
+	margin-top: 0px;
+	color:#bb2f16;
+}
+
+
 .dice_btn{
 	display: flex;
 	flex-direction: row;	
@@ -257,7 +268,7 @@ tr:nth-child(2n) {background: rgb(215, 243, 149);}
 #scrollToTop {
 
 	position: fixed;
-	bottom: 20px;
+	bottom: 50px;
 	right: 20px;	
 	cursor: pointer;
 	opacity: 0;
@@ -265,7 +276,7 @@ tr:nth-child(2n) {background: rgb(215, 243, 149);}
 	width: 50px;	
    color: rgba(37, 10, 10, 0.966);
    font-weight: bold;
-   background: transparent;
+   background:rgba(183, 221, 44, 0.5);
 }
  
 

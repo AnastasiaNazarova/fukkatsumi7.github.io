@@ -2,15 +2,18 @@ function ValidMail() {
     var re = /^[\w]{1}[\w-\.]*@[\w-]+\.[a-z]{2,4}$/i;
     var myMail = document.getElementById('email').value;
     var valid = re.test(myMail);
-    if (valid) output = '';
-    else output = 'Адрес электронной почты введен неправильно!';
+    if (myMail == "") output = 'Введите почту';
+    else {
+        if (!valid) output = 'Адрес электронной почты введен неправильно!';
+        else output = '';
+    }
     document.getElementById('message').innerHTML = output;
 
     return valid;
 }
 function ValidLogin() {
 
-    var re = /^[a-z0-9_-]{4,20}$/i;
+    var re = /^[\w-]{4,20}$/i;
     var login = document.getElementById('login_reg').value;
     var valid = re.test(login);
     if (login == "") output = 'Введите логин';
@@ -22,7 +25,7 @@ function ValidLogin() {
     return valid;
 }
 function ValidPassword() {
-    var re = /^[\w]{6,20}$/i;
+    var re = /^[\w]{6,15}$/i;
     var password = document.getElementById('password').value;
     var password2 = document.getElementById('password2').value;
     var valid = re.test(password);
@@ -44,14 +47,21 @@ function ValidPassword() {
     return valid;
 }
 function ValidPhone() {
-    var re = /^\d[\d\(\)\ -]{4,14}\d$/;
-    var myPhone = document.getElementById('phone').value;
+    var re = /^[\d\+][\d\(\)\ -]{4,14}\d$/;
+    var myPhone  = document.getElementById('phone').value;
     var valid = re.test(myPhone);
-    if (valid) output = '';
-    else output = 'Номер телефона введен неправильно!';
-    document.getElementById('message').innerHTML = document.getElementById('message_phone').innerHTML+'<br />'+output;
+    if (myPhone == "") output = 'Введите номер телефона';
+    else {
+        if (!valid) output = 'Телефон введен неправильно!';
+        else output = '';
+    }
+    document.getElementById('message_phone').innerHTML = output;
     return valid;
 }  
+
+
+
+
 
 function getRandomInRange(min, max) {
     var c = Math.floor(Math.random() * (max - min + 1)) + min;
@@ -61,7 +71,14 @@ function getRandomInRange(min, max) {
 
   window.onscroll = function() {
     var scrollElem = document.getElementById("scrollToTop");
-    if (document.body.scrollTop > document.documentElement.clientHeight) {
+
+    var scrollHeight = Math.max(
+        document.body.scrollHeight, document.documentElement.scrollHeight,
+        document.body.offsetHeight, document.documentElement.offsetHeight,
+        document.body.clientHeight, document.documentElement.clientHeight
+      );
+     /*document.body.scrollTop */
+    if ( window.pageYOffset> document.documentElement.clientHeight) {
        scrollElem.style.opacity = "1";
     } else {
         scrollElem.style.opacity = "0";
@@ -81,4 +98,6 @@ function openImageWindow(src) {
     image.src = src;
     var width = image.width;
     var height = image.height;
-    window.open(src,"Image","width=" + width + ",height=" + height);}
+    window.open(src,"Image","width=" + width + ",height=" + height);
+}
+
