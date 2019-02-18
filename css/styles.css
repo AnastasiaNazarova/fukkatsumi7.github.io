@@ -19,12 +19,6 @@ h3{
 	font-size: 20px;
 	color: #579b2f;
 }
-/*p {	
-	font-size: 16px;
-	margin: 0px;	
-	text-align:justify; 
-}*/
-
 
 body {
 	font: 12px Tahoma, sans-serif;
@@ -140,34 +134,30 @@ nav li a:hover {
 main{
   display: flex;
   justify-content: space-between;
+
+  background-image: url(../images/taverna.jpg);
+	background-attachment:fixed;
+	background-size:contain auto;
+	background-repeat: no-repeat;	
 }
 
 div{
-	width:62%;
+	width:75%;
 	font-size: 16px;
 	padding: 10px;
 	
-	background-image: url(../images/wood_background.jpg);
+	/*background-image: url(../images/wood_background.jpg);*/
+	background-color: rgba(37, 48, 22, 0.95);
 	background-size: auto 500px;
 	background-repeat: repeat;	
+	
 }
+
 
 div p{
 	color: #f7e8dc;
 }
 
-
-aside img
-{
-	 width:100%;
-	
-}
-aside 
-{	
-	background-image: url(../images/background_section.jpg);
-	background-size: contain;
-	width:250px;
-}
 
 footer
 {
@@ -198,7 +188,7 @@ section{
 	border-style: solid;
 	margin-bottom: 20px;
 	background-image: url(../images/ancient-parchment-1175853.png);	
-	background-size: cover;
+	background-size: contain;
 }
 section p{
 	color: #f7e8dc;
@@ -256,13 +246,15 @@ tr:nth-child(2n) {background: rgb(215, 243, 149);}
 	-webkit-box-pack: start;
 	align-items: flex-start;	
 	background: transparent;
+	background-size: 700px auto;
+	
 }
 .dice_btn button{
 	
 	height:100px; 
 	background: transparent;
 	margin: 15px;
-	margin-left: 5px;
+	margin-left: 35px;
 }
 
 #scrollToTop {
@@ -276,7 +268,8 @@ tr:nth-child(2n) {background: rgb(215, 243, 149);}
 	width: 50px;	
    color: rgba(37, 10, 10, 0.966);
    font-weight: bold;
-   background:rgba(183, 221, 44, 0.5);
+  background:rgba(183, 221, 44, 0.5);
+   
 }
  
 
